@@ -90,7 +90,8 @@ L’application sera accessible sur :
 ## 🧩 **Exemples de visualisations**
 
 ### 💰 Impact du prix et du canal sur les ventes
-<img src="assets/screenshots/impact_prix_canal.png" width="700">
+<img src="<img width="890" height="260" alt="image" src="https://github.com/user-attachments/assets/a97fda79-b43c-407b-aa8a-0847ba3816c3" />
+" width="700">
 
 ### 📊 Comparaison du chiffre d’affaires par canal
 <img src="assets/screenshots/comparaison_ca.png" width="700">
