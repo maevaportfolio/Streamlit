@@ -95,7 +95,7 @@ L’application sera accessible sur :
 ## 🧩 **Exemples de visualisations**
 
 ### 💰 Le profit apr Etat
-<img src="https://github.com/user-attachments/assets/a97fda79-b43c-407b-aa8a-0847ba3816c3"
+<img src="https://github.com/user-attachments/assets/a97fda79-b43c-407b-aa8a-0847ba3816c3"/>
 ### 📊 Analyse du prix et du canal sur les ventes
 <img  src="https://github.com/user-attachments/assets/8a279ca6-172a-4cce-b879-3447d3cf2224" />
 
