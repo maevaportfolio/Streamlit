@@ -48,8 +48,8 @@ L’application permet de mesurer **l’impact des prix, des canaux de vente (on
 
 ### 1️⃣ Cloner le dépôt :
 ```bash
-git clone https://github.com/tonprofil/Amazon-Sales-Dashboard.git
-cd Amazon-Sales-Dashboard
+git clone https://github.com/maevaportfolio/Streamlit.git
+
 ```
 
 ### 2️⃣ Créer un environnement virtuel :
