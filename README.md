@@ -1,6 +1,11 @@
 
 # 🛒 Amazon Sales Performance Dashboard  
 
+## 🔗 **Démo en ligne**
+
+> 🌐 *(lien fictif — à remplacer une fois déployé)*
+> 
+
 ### **Analyse dynamique des ventes, marges et canaux pour les responsables pricing et stratégie commerciale.**
 
 ---
@@ -89,16 +94,11 @@ L’application sera accessible sur :
 
 ## 🧩 **Exemples de visualisations**
 
-### 💰 Impact du prix et du canal sur les ventes
-<img src="<img width="890" height="260" alt="image" src="https://github.com/user-attachments/assets/a97fda79-b43c-407b-aa8a-0847ba3816c3" />
-" width="700">
+### 💰 Le profit apr Etat
+<img src="<img width="890" height="260" alt="image" src="https://github.com/user-attachments/assets/a97fda79-b43c-407b-aa8a-0847ba3816c3"
+### 📊 Analyse du prix et du canal sur les ventes
+<img src=<img width="923" height="271" alt="image" src="https://github.com/user-attachments/assets/8a279ca6-172a-4cce-b879-3447d3cf2224" />
 
-### 📊 Comparaison du chiffre d’affaires par canal
-<img src="assets/screenshots/comparaison_ca.png" width="700">
 
----
 
-## 🔗 **Démo en ligne**
-
-> 🌐 *(lien fictif — à remplacer une fois déployé)*
 
