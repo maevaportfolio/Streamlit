@@ -1,5 +1,5 @@
 
-# 🛒 Amazon Sales Performance Dashboard  
+# 🛒 Adidas Sales Performance Dashboard  
 
 ## 🔗 **Démo en ligne**
 
@@ -12,7 +12,7 @@
 
 ## 📊 **Présentation du projet**
 
-Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Amazon** à travers un **dashboard interactif Streamlit**.  
+Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Adidas** à travers un **dashboard interactif Streamlit**.  
 L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)** et des régions sur les ventes et la rentabilité.
 
 > 🎯 **Objectif principal :** fournir un outil d’aide à la décision pour les équipes **pricing, marketing et stratégie commerciale** afin d’ajuster les politiques tarifaires et les stratégies multicanales.
