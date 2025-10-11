@@ -13,21 +13,19 @@
 ## 📊 **Présentation du projet**
 
 Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Adidas** à travers un **dashboard interactif Streamlit**.  
-L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)** et des régions sur les ventes et la rentabilité.
+L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)**, les performances par **fournisseurs** et **produits**, ainsi que les disparités **régionales**.
 
-> 🎯 **Objectif principal :** fournir un outil d’aide à la décision pour les équipes **pricing, marketing et stratégie commerciale** afin d’ajuster les politiques tarifaires et les stratégies multicanales.
-
+> 🎯 **Objectif principal :fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
 ---
 
 ## 🚀 **Fonctionnalités principales**
 
 | Thématique | Description |
 |-------------|-------------|
-| 💰 **Impact du prix et du canal** | Analyse la relation entre le prix unitaire moyen, les volumes vendus et le chiffre d’affaires selon le canal. |
+| 💰 **Impact du prix et du canal** | Analyse de la relation prix moyen ↔ volume ↔ chiffre d’affaires par canal (Online / In-store / Outlet) et visualisation de la sensibilité au prix et identification des canaux prioritaires pour les promotions ou la stratégie premium.|
 | 🌍 **Analyse géographique** | Visualisation interactive des performances par région et zone commerciale. |
-| 🧮 **Analyse financière** | Suivi des indicateurs clés : chiffre d’affaires, volume de ventes, marges et profits. |
-| 🧠 **Insights dynamiques** | Les interprétations changent automatiquement selon les filtres et les données sélectionnées. |
-| 📈 **Comparaisons croisées** | Évaluation simultanée des performances prix / canal / produit. |
+| 🧮 **Distributeurs (Retailers)** | Analyse de la performance par retail partner (CA, marge, part de marché) |
+| 🧠 **Insights Produits** | Mix produit : top ventes, poids mort, performance par catégorie |
 
 ---
 
@@ -76,19 +74,24 @@ L’application sera accessible sur :
 
 ## 🧭 **Comment utiliser le dashboard**
 
-1. **Choisir les filtres** (période, canal, région, catégorie produit).  
-2. Observer les **graphiques interactifs** : prix moyen, volume, chiffre d’affaires, marges.  
-3. Lire les **interprétations automatiques** pour comprendre les tendances clés.  
-4. Identifier les **canaux performants** et **les segments sensibles au prix**.  
-5. Exporter les insights pour les réunions de pilotage.
+1. Sélectionner les filtres (période, canal de vente, région, retailer, produit) dans la barre latérale.  
+2. Explorer les graphiques interactifs : prix moyen vs volume, CA par canal, carte géographique, top produits, performance retailers.  
+3. Lire les interprétations dynamiques sous chaque graphique — elles se mettent à jour automatiquement selon les filtres appliqués.  
+*Télécharger les données filtrées :
+Le dashboard propose un bouton d’export / téléchargement qui permet d’obtenir un CSV correspondant exactement à la sélection active (période, canal, région, etc.).
+Utile pour préparer des rapports, envoyer des extraits aux équipes, ou effectuer des analyses complémentaires hors-dashboard.*
+5. Utiliser les recommandations générées (par rôle) pour prioriser actions commerciales, promotions et partenariats
 
 ---
 
 ## 👥 **Public cible**
 
-- **Responsables pricing** : ajuster les prix selon la sensibilité des canaux.  
-- **Équipes marketing** : cibler les promotions sur les canaux les plus réactifs.  
-- **Direction commerciale** : suivre les performances globales et orienter la stratégie omnicanale.  
+| Rôle                         | Objectif                                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Responsable Partenariats** | Renforcer les collaborations (ex. WestGear, Sports Direct, Foot Locker) et prioriser les retailers à forte contribution.        |
+| **Responsable Marketing**    | Lancer des campagnes ciblées (ex. campagnes pour femmes) et mesurer l’impact promo par canal.                                   |
+| **Manager Régional**         | Adapter le pricing et le mix canal par région (ex. In-store vs Outlet), optimiser l’allocation des stocks & la présence locale. |
+| **Responsable Commercial**   | Ajuster la stratégie tarifaire (notamment online) pour maximiser le CA et la marge.                                             |
 
 ---
 
