@@ -3,7 +3,7 @@
 
 ## 🔗 **Démo en ligne**
 
-> 🌐 *(lien fictif — à remplacer une fois déployé)*
+> 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/*
 > 
 
 ### **Analyse dynamique des ventes, marges et canaux pour les responsables pricing et stratégie commerciale.**
