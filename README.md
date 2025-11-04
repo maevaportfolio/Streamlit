@@ -12,7 +12,7 @@ Ce document explique comment configurer **le même environnement de travail** qu
 Ouvre ton terminal (ou VS Code) et exécute :
 
 ```bash
-git clone https://github.com/ton_nom_utilisateur/ton_repo.git
+git clone https://github.com/maevaportfolio/Streamlit.git
 ```
 
 ```bash
