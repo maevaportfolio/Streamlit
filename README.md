@@ -118,9 +118,8 @@ git push -u origin feature_nom_branch
 ```
 
 Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
-
-📎 Structure du projet   
-## 📎 Structure du projet (exemple)
+  
+## 📎 Structure du projet
 
 | Élément                  | Type de fichier/dossier | Description |
 |---------------------------|--------------------------|-------------|
