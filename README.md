@@ -3,7 +3,7 @@
 ## 🚀 Guide d’installation et configuration de l’espace de travail
 
 Ce document explique comment configurer **le même environnement de travail** que celui utilisé pour le projet.  
-👉 **Objectif :** que chaque membre du groupe ait le même setup pour éviter les erreurs de dépendances ou de version.
+**Objectif :** que chaque membre du groupe ait le même setup pour éviter les erreurs de dépendances ou de version.
 
 ---
 
@@ -21,7 +21,7 @@ cd ton_repo
 
 --- 
 
-## 🌿 Étape 2 — Passer sur la bonne branche
+## Étape 2 — Passer sur la bonne branche
 
 La branche principale de travail est deployment_branch.
 Vérifie que tu es dessus :
@@ -39,7 +39,7 @@ git checkout -b deployment_branch origin/deployment_branch
 
 ---
 
-## 🧱 Étape 3 — Configuration de l’environnement Python avec UV
+## Étape 3 — Configuration de l’environnement Python avec UV
 
 On utilise uv pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
 
@@ -88,7 +88,7 @@ uv sync
 
 ---
 
-## 🧩 Étape 4 — Faire des modifications
+## Étape 4 — Faire des modifications
 
 Une fois ton environnement configuré, tu peux coder depuis VS Code.
 Quand tu as fini tes modifications :
@@ -103,7 +103,7 @@ git push
 
 ---
 
-## 🧠 Étape 5 — (Optionnel) Créer ta propre sous-branche
+## Étape 5 — (Optionnel) Créer ta propre sous-branche
 
 Si tu veux développer une fonctionnalité spécifique :
 
@@ -113,8 +113,7 @@ git push -u origin feature_nom_branch
 ```
 
 Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
-
-📎 Structure du projet   
+ 
 ## 📎 Structure du projet (exemple)
 
 | Élément                  | Type de fichier/dossier | Description |
@@ -141,7 +140,7 @@ Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deploy
 
 ---
 
-## 📊 **Présentation du projet**
+## **Présentation du projet**
 
 Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Adidas** à travers un **dashboard interactif Streamlit**.  
 L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)**, les performances par **fournisseurs** et **produits**, ainsi que les disparités **régionales**.
@@ -149,7 +148,7 @@ L’application permet de mesurer **l’impact des prix, des canaux de vente (on
 > 🎯 **Objectif principal :fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
 ---
 
-## 🚀 **Fonctionnalités principales**
+## **Fonctionnalités principales**
 
 | Thématique | Description |
 |-------------|-------------|
@@ -160,7 +159,7 @@ L’application permet de mesurer **l’impact des prix, des canaux de vente (on
 
 ---
 
-## 🧩 **Stack technique**
+## **Stack technique**
 
 | Outil / Librairie | Utilisation |
 |--------------------|-------------|
@@ -173,25 +172,7 @@ L’application permet de mesurer **l’impact des prix, des canaux de vente (on
 
 ---
 
-## 🧰 **Installation et exécution**
-
-### 1️⃣ Cloner le dépôt :
-```bash
-git clone https://github.com/maevaportfolio/Streamlit.git
-
-```
-
-### 2️⃣ Créer un environnement virtuel :
-```bash
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-```
-
-### 3️⃣ Installer les dépendances :
-```bash
-pip install -r requirements.txt
-```
+## 🧰 **exécution**
 
 ### 4️⃣ Lancer le dashboard :
 ```bash
