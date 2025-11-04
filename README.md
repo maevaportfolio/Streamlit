@@ -114,16 +114,16 @@ git push -u origin feature_nom_branch
 
 Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
 
-📎 Structure du projet
-📦 ton_repo/
- ┣ 📁 app/                # Code principal Streamlit
- ┣ 📁 scripts/            # Scripts de déploiement (dont Bash)
- ┣ 📁 docker/             # Dockerfile et fichiers liés à la containerisation
- ┣ 📜 pyproject.toml      # Dépendances gérées par UV
- ┣ 📜 uv.lock             # Verrouillage des versions
- ┣ 📜 requirements.txt    # (optionnel, compatibilité classique)
+📎 Structure du projet   
+📦 ton_repo/  
+ ┣ 📁 app/                # Code principal Streamlit   
+ ┣ 📁 scripts/            # Scripts de déploiement (dont Bash)  
+ ┣ 📁 docker/             # Dockerfile et fichiers liés à la   containerisation
+ ┣ 📜 pyproject.toml      # Dépendances gérées par UV  
+ ┣ 📜 uv.lock             # Verrouillage des versions   
+ ┣ 📜 requirements.txt    # (optionnel, compatibilité classique)  
  ┣ 📜 README.md           # Ce guide
- ┗ 📜 deploy.sh           # Script de déploiement principal
+ ┗ 📜 deploy.sh           # Script de déploiement principal  
 
 
 ---
