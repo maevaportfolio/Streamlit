@@ -37,7 +37,7 @@ git fetch origin
 git checkout -b deployment_branch origin/deployment_branch
 ```
 
-**## 🧱 Étape 3 — Configuration de l’environnement Python avec UV**
+## 🧱 Étape 3 — Configuration de l’environnement Python avec UV
 
 On utilise uv pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
 
@@ -84,7 +84,7 @@ uv add streamlit pandas numpy requests
 uv sync
 ```
 
-**##🧩 Étape 4 — Faire des modifications**
+## 🧩 Étape 4 — Faire des modifications
 
 Une fois ton environnement configuré, tu peux coder depuis VS Code.
 Quand tu as fini tes modifications :
