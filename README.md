@@ -1,6 +1,6 @@
 # 🛒 Adidas Sales Performance Dashboard  
 
-# 🚀 Guide d’installation et configuration de l’espace de travail
+## 🚀 Guide d’installation et configuration de l’espace de travail
 
 Ce document explique comment configurer **le même environnement de travail** que celui utilisé pour le projet.  
 👉 **Objectif :** que chaque membre du groupe ait le même setup pour éviter les erreurs de dépendances ou de version.
