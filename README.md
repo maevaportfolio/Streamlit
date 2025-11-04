@@ -1,5 +1,136 @@
-
 # 🛒 Adidas Sales Performance Dashboard  
+
+## 🚀 Guide d’installation et configuration de l’espace de travail
+
+Ce document explique comment configurer **le même environnement de travail** que celui utilisé pour le projet.  
+👉 **Objectif :** que chaque membre du groupe ait le même setup pour éviter les erreurs de dépendances ou de version.
+
+---
+
+## ⚙️ Étape 1 — Cloner le dépôt :
+
+Ouvre ton terminal (ou VS Code) et exécute :
+
+```bash
+git clone https://github.com/maevaportfolio/Streamlit.git
+```
+
+```bash
+cd ton_repo
+```
+
+--- 
+
+## 🌿 Étape 2 — Passer sur la bonne branche
+
+La branche principale de travail est deployment_branch.
+Vérifie que tu es dessus :
+
+```bash
+git checkout deployment_branch
+```
+
+Si la branche n’existe pas encore localement :
+
+```bash
+git fetch origin
+git checkout -b deployment_branch origin/deployment_branch
+```
+
+---
+
+## 🧱 Étape 3 — Configuration de l’environnement Python avec UV
+
+On utilise uv pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
+
+1️⃣ Installer les dépendances de base
+
+Assure-toi d’avoir Python 3.10+ et pip installé, puis :
+
+pip install uv
+
+2️⃣ Créer un environnement virtuel
+uv venv
+
+3️⃣ Activer l’environnement virtuel
+
+**Sur Windows :**
+```bash
+.venv\Scripts\activate
+```
+
+**Sur Mac/Linux :**
+```bash
+source .venv/bin/activate
+```
+
+4️⃣ Initialiser le projet avec uv
+
+Cela génère les fichiers pyproject.toml et uv.lock :
+
+```bash
+uv init
+```
+
+5️⃣ Ajouter les dépendances nécessaires
+
+Par exemple pour Streamlit et autres outils :
+
+```bash
+uv add streamlit pandas numpy requests
+```
+
+💡 Tu peux aussi installer toutes les dépendances du projet (si déjà listées dans pyproject.toml) avec :
+
+```bash
+uv sync
+```
+
+---
+
+## 🧩 Étape 4 — Faire des modifications
+
+Une fois ton environnement configuré, tu peux coder depuis VS Code.
+Quand tu as fini tes modifications :
+
+```bash
+git add .
+git commit -m "Ajout du script de déploiement Bash"
+git push
+```
+
+**⚠️ Ne pas push directement sur main — toujours depuis ou vers deployment_branch.**
+
+---
+
+## 🧠 Étape 5 — (Optionnel) Créer ta propre sous-branche
+
+Si tu veux développer une fonctionnalité spécifique :
+
+```bash
+git checkout -b feature_nom_branch
+git push -u origin feature_nom_branch
+```
+
+Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
+
+📎 Structure du projet   
+## 📎 Structure du projet (exemple)
+
+| Élément                  | Type de fichier/dossier | Description |
+|---------------------------|--------------------------|-------------|
+| `app/`                   | 📁 Dossier               | Code principal Streamlit |
+| `scripts/`               | 📁 Dossier               | Scripts de déploiement (dont Bash) |
+| `docker/`                | 📁 Dossier               | Dockerfile et fichiers liés à la containerisation |
+| `pyproject.toml`         | 📜 Fichier               | Dépendances gérées par UV |
+| `uv.lock`                | 📜 Fichier               | Verrouillage des versions |
+| `requirements.txt`       | 📜 Fichier (optionnel)   | Compatibilité avec `pip` classique |
+| `README.md`              | 📜 Fichier               | Ce guide d’installation et d’utilisation |
+| `deploy.sh`              | 📜 Script Bash           | Script principal de déploiement |
+
+
+
+---
 
 ## 🔗 **Démo en ligne**
 
