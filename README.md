@@ -19,7 +19,9 @@ git clone https://github.com/maevaportfolio/Streamlit.git
 cd ton_repo
 ```
 
-**## 🌿 Étape 2 — Passer sur la bonne branche**
+--- 
+
+## 🌿 Étape 2 — Passer sur la bonne branche
 
 La branche principale de travail est deployment_branch.
 Vérifie que tu es dessus :
