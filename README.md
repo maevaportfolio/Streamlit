@@ -45,12 +45,17 @@ On utilise uv pour gérer l’environnement virtuel et les dépendances (plus ra
 
 1️⃣ Installer les dépendances de base
 
-Assure-toi d’avoir Python 3.10+ et pip installé, puis :
+Assure-toi d’avoir Python 3.11 et pip installé, puis :
 
+```bash
 pip install uv
+```
 
 2️⃣ Créer un environnement virtuel
+
+```bash
 uv venv
+```
 
 3️⃣ Activer l’environnement virtuel
 
