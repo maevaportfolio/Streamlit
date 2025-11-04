@@ -7,16 +7,17 @@ Ce document explique comment configurer **le même environnement de travail** qu
 
 ---
 
-## ⚙️ Étape 1 — Cloner le dépôt
+## ⚙️ Étape 1 — Cloner le dépôt :
 
 Ouvre ton terminal (ou VS Code) et exécute :
 
 ```bash
 git clone https://github.com/ton_nom_utilisateur/ton_repo.git
-
+```
 
 ```bash
 cd ton_repo
+```
 
 **## 🌿 Étape 2 — Passer sur la bonne branche**
 
@@ -25,18 +26,18 @@ Vérifie que tu es dessus :
 
 ```bash
 git checkout deployment_branch
-
+```
 
 Si la branche n’existe pas encore localement :
 
 ```bash
 git fetch origin
 git checkout -b deployment_branch origin/deployment_branch
+```
 
 **## 🧱 Étape 3 — Configuration de l’environnement Python avec UV**
 
-On utilise uv
- pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
+On utilise uv pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
 
 1️⃣ Installer les dépendances de base
 
@@ -49,55 +50,63 @@ uv venv
 
 3️⃣ Activer l’environnement virtuel
 
-Sur Windows :
-
+**Sur Windows :**
+```bash
 .venv\Scripts\activate
+```
 
-
-Sur Mac/Linux :
-
+**Sur Mac/Linux :**
+```bash
 source .venv/bin/activate
+```
 
 4️⃣ Initialiser le projet avec uv
 
 Cela génère les fichiers pyproject.toml et uv.lock :
 
+```bash
 uv init
+```
 
 5️⃣ Ajouter les dépendances nécessaires
 
 Par exemple pour Streamlit et autres outils :
 
+```bash
 uv add streamlit pandas numpy requests
-
+```
 
 💡 Tu peux aussi installer toutes les dépendances du projet (si déjà listées dans pyproject.toml) avec :
 
+```bash
 uv sync
+```
 
-🧩 Étape 4 — Faire des modifications
+**##🧩 Étape 4 — Faire des modifications**
 
 Une fois ton environnement configuré, tu peux coder depuis VS Code.
 Quand tu as fini tes modifications :
 
+```bash
 git add .
 git commit -m "Ajout du script de déploiement Bash"
 git push
+```
 
+**⚠️ Ne pas push directement sur main — toujours depuis ou vers deployment_branch.**
 
-⚠️ Ne pas push directement sur main — toujours depuis ou vers deployment_branch.
-
-🧠 Étape 5 — (Optionnel) Créer ta propre sous-branche
+## 🧠 Étape 5 — (Optionnel) Créer ta propre sous-branche
 
 Si tu veux développer une fonctionnalité spécifique :
 
-git checkout -b feature_nom_du_camarade
-git push -u origin feature_nom_du_camarade
-
+```bash
+git checkout -b feature_nom_branch
+git push -u origin feature_nom_branch
+```
 
 Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
 
-📎 Structure du projet (exemple)
+📎 Structure du projet
 📦 ton_repo/
  ┣ 📁 app/                # Code principal Streamlit
  ┣ 📁 scripts/            # Scripts de déploiement (dont Bash)
@@ -109,8 +118,7 @@ Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deploy
  ┗ 📜 deploy.sh           # Script de déploiement principal
 
 
-
-
+---
 
 ## 🔗 **Démo en ligne**
 
