@@ -4,9 +4,6 @@
 
 Cette application Streamlit est déployée via Docker afin d'assurer un fonctionnement identique sur tous les ordinateurs (Windows, Mac, Linux).
 
----
-## 🚀 Lancer l'application
-
 ### ⚙️ Étape 1 — Cloner le dépôt :
 
 Ouvre ton terminal (ou VS Code) et exécute :
@@ -95,7 +92,6 @@ Le script deploy.sh va automatiquement :
 ## 🔗 **Démo en ligne**
 
 > 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/*
-> 
 
 ### **Analyse dynamique des ventes, marges et canaux pour les responsables pricing et stratégie commerciale.**
 
