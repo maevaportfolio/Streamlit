@@ -1,10 +1,18 @@
-# 🛒 Adidas Sales Performance Dashboard  
+# Déploiement Docker de l’Application Streamlit : Adidas Sales Performance Dashboard
 
-## 🚀Application Streamlit — Déploiement via Docker
+Dans un premier temps, nous allons expliquer comment lancer l'application sur votre système d'exploitation à l’aide de Docker. L’objectif est de garantir que chacun dispose du même environnement, afin d’éviter les différences de configuration entre nos machines.
 
-Cette application Streamlit est déployée via Docker afin d'assurer un fonctionnement identique sur tous les ordinateurs (Windows, Mac, Linux).
+Une fois l’application démarrée, nous présenterons ensuite le Dashboard Adidas : son objectif, sa logique d’analyse et les principaux indicateurs qu’il met en avant.
+
+## **Application Streamlit**
+| 🔗 **Lien de l’application** |
+|------------------------------|
+| https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/    |
+
+> 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/*
 
 -- 
+## 🔗 **Lancer l'application via Docker**
 
 ### Étape 1 — Cloner le dépôt :
 
@@ -98,20 +106,12 @@ Pour arrêter l'application, il suffit de faire :
 
 ---
 
-## 🔗 **Démo en ligne**
-
-> 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/*
-
-### **Analyse dynamique des ventes, marges et canaux pour les responsables pricing et stratégie commerciale.**
-
----
-
-## 📊 **Présentation du projet**
+## 📊 **Présentation et analyse du projet**
 
 Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Adidas** à travers un **dashboard interactif Streamlit**.  
 L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)**, les performances par **fournisseurs** et **produits**, ainsi que les disparités **régionales**.
 
-> 🎯 Objectif principal :fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
+> 🎯 Objectif principal : Fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
 ---
 
 ## 🚀 **Fonctionnalités principales**
