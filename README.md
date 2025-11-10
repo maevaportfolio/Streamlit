@@ -7,9 +7,9 @@ Une fois l’application démarrée, nous présenterons ensuite le Dashboard Adi
 ## **Application Streamlit**
 | 🔗 **Lien de l’application** |
 |------------------------------|
-| https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/    |
+|[Accéder au Dashboard en ligne](https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/)  |
 
-> 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/*
+> 🌐 https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/
 
 -- 
 ## 🔗 **Lancer l'application via Docker**
