@@ -4,9 +4,9 @@ Dans un premier temps, nous allons expliquer comment lancer l'application sur vo
 
 Une fois l’application démarrée, nous présenterons ensuite le Dashboard Adidas : son objectif, sa logique d’analyse et les principaux indicateurs qu’il met en avant.
 
-| 🔗**Lien de l’application** |
-|------------------------------|
-|[Accéder au dashboard en ligne](https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/)  |
+                                                                          | 🔗**Lien de l’application** |
+                                                                          |------------------------------|
+                                                                          |[Accéder au dashboard en ligne](https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/)  |
 
 --- 
 
