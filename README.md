@@ -8,7 +8,8 @@ Une fois l’application démarrée, nous présenterons ensuite le Dashboard Adi
 |------------------------------|
 |[Accéder au dashboard en ligne](https://app-m6mwbx8fwhwhedavfmnc4b.streamlit.app/)  |
 
--- 
+--- 
+
 ## 🚀 **Lancer l'application avex Docker**
 
 ### Étape 1 — Cloner le dépôt :
