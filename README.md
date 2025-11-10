@@ -1,13 +1,13 @@
 # 🛒 Adidas Sales Performance Dashboard  
 
-## 🚀 Guide d’installation et configuration de l’espace de travail
+## 🚀Application Streamlit — Déploiement via Docker
 
-Ce document explique comment configurer **le même environnement de travail** que celui utilisé pour le projet.  
-👉 **Objectif :** que chaque membre du groupe ait le même setup pour éviter les erreurs de dépendances ou de version.
+Cette application Streamlit est déployée via Docker afin d'assurer un fonctionnement identique sur tous les ordinateurs (Windows, Mac, Linux).
 
 ---
+## 🚀 Lancer l'application
 
-## ⚙️ Étape 1 — Cloner le dépôt :
+### ⚙️ Étape 1 — Cloner le dépôt :
 
 Ouvre ton terminal (ou VS Code) et exécute :
 
@@ -21,9 +21,17 @@ cd ton_repo
 
 --- 
 
-## 🌿 Étape 2 — Passer sur la bonne branche
+### Étape 2 — Passer sur la bonne branche
 
-La branche principale de travail est deployment_branch.
+Nous avons deux branches :
+
+| Branche              | Rôle                                              |
+|----------------------|--------------------------------------------------|
+| `main`               | Version stable / application locale              |
+| `deployment_branch`  | Travail collaboratif + déploiement Docker (✅ nous travaillons ici) |
+
+
+La branche principale de travail est **deployment_branch**.
 Vérifie que tu es dessus :
 
 ```bash
@@ -39,98 +47,46 @@ git checkout -b deployment_branch origin/deployment_branch
 
 ---
 
-## 🧱 Étape 3 — Configuration de l’environnement Python avec UV
+### Étape 3 — Vérifier que Docker est installé et ouvert
 
-On utilise uv pour gérer l’environnement virtuel et les dépendances (plus rapide que pip classique).
+Télécharger Docker si besoin → https://www.docker.com/products/docker-desktop/
 
-1️⃣ Installer les dépendances de base
+- Lancer Docker Desktop et l'ouvrir avant de continuer
 
-Assure-toi d’avoir Python 3.11 et pip installé, puis :
 
-```bash
-pip install uv
-```
+### Étape 4 — Lancer l'application
 
-2️⃣ Créer un environnement virtuel
+Une fois 
 
 ```bash
-uv venv
+./deploy.sh
 ```
 
-3️⃣ Activer l’environnement virtuel
-
-**Sur Windows :**
-```bash
-.venv\Scripts\activate
-```
-
-**Sur Mac/Linux :**
-```bash
-source .venv/bin/activate
-```
-
-4️⃣ Initialiser le projet avec uv
-
-Cela génère les fichiers pyproject.toml et uv.lock :
-
-```bash
-uv init
-```
-
-5️⃣ Ajouter les dépendances nécessaires
-
-Par exemple pour Streamlit et autres outils :
-
-```bash
-uv add streamlit pandas numpy requests
-```
-
-💡 Tu peux aussi installer toutes les dépendances du projet (si déjà listées dans pyproject.toml) avec :
-
-```bash
-uv sync
-```
-
----
-
-## 🧩 Étape 4 — Faire des modifications
-
-Une fois ton environnement configuré, tu peux coder depuis VS Code.
-Quand tu as fini tes modifications :
-
-```bash
-git add .
-git commit -m "Ajout du script de déploiement Bash"
-git push
-```
-
-**⚠️ Ne pas push directement sur main — toujours depuis ou vers deployment_branch.**
-
----
-
-## 🧠 Étape 5 — (Optionnel) Créer ta propre sous-branche
-
-Si tu veux développer une fonctionnalité spécifique :
-
-```bash
-git checkout -b feature_nom_branch
-git push -u origin feature_nom_branch
-```
-
-Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deployment_branch.
+Le script deploy.sh va automatiquement :
+- Construire l’image Docker
+- Lancer le conteneur
+- Ouvrir l’application
   
+---
+
+
 ## 📎 Structure du projet
 
-| Élément                  | Type de fichier/dossier | Description |
-|---------------------------|--------------------------|-------------|
-| `app/`                   | 📁 Dossier               | Code principal Streamlit |
-| `scripts/`               | 📁 Dossier               | Scripts de déploiement (dont Bash) |
-| `docker/`                | 📁 Dossier               | Dockerfile et fichiers liés à la containerisation |
-| `pyproject.toml`         | 📜 Fichier               | Dépendances gérées par UV |
-| `uv.lock`                | 📜 Fichier               | Verrouillage des versions |
-| `requirements.txt`       | 📜 Fichier (optionnel)   | Compatibilité avec `pip` classique |
-| `README.md`              | 📜 Fichier               | Ce guide d’installation et d’utilisation |
-| `deploy.sh`              | 📜 Script Bash           | Script principal de déploiement |
+| Élément                 | Type               | Description |
+|------------------------|-------------------|-------------|
+| `dataset/`             | 📁 Dossier        | Contient les données de l’application |
+| `images/`              | 📁 Dossier        | Images utilisées dans l’interface |
+| `app.py`               | 📜 Script Python  | Application Streamlit principale |
+| `Dockerfile`           | 📜 Fichier Docker | Instructions pour construire l'image Docker |
+| `deploy.sh`            | 🟢 Script Bash    | Build + run automatisé (script principal) |
+| `build.sh`             | 🔧 Script Bash    | Construit l’image Docker |
+| `run.sh`               | ⚙️ Script Bash    | Lance le conteneur Docker |
+| `stop.sh`              | 🛑 Script Bash    | Arrête le conteneur |
+| `test.sh`              | 🧪 Script Bash    | Tests liés au conteneur |
+| `requierements.txt`    | 📜 Fichier        | Liste des dépendances Python |
+| `README.md`            | 📜 Documentation  | Instructions de lancement |
+| `GUIDE-DEPLOIEMENT.md` | 📜 Documentation  | Guide détaillé du déploiement |
+| `GUIDE-TEST.md`        | 📜 Documentation  | Guide des scénarios de test |
 
 
 
@@ -150,7 +106,7 @@ Ensuite, fais une Pull Request sur GitHub pour intégrer ton travail dans deploy
 Ce projet a pour objectif de **visualiser, analyser et interpréter les performances commerciales d’Adidas** à travers un **dashboard interactif Streamlit**.  
 L’application permet de mesurer **l’impact des prix, des canaux de vente (online, in-store, outlet)**, les performances par **fournisseurs** et **produits**, ainsi que les disparités **régionales**.
 
-> 🎯 **Objectif principal :fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
+> 🎯 Objectif principal :fournir un outil d’aide à la décision pour les équipes **pricing, marketing, régionales et commerciales**, afin d’ajuster les politiques tarifaires, les stratégies multicanales et les partenariats de distribution.
 ---
 
 ## 🚀 **Fonctionnalités principales**
@@ -161,49 +117,6 @@ L’application permet de mesurer **l’impact des prix, des canaux de vente (on
 | 🌍 **Analyse géographique** | Visualisation interactive des performances par région et zone commerciale. |
 | 🧮 **Distributeurs (Retailers)** | Analyse de la performance par retail partner (CA, marge, part de marché) |
 | 🧠 **Insights Produits** | Mix produit : top ventes, poids mort, performance par catégorie |
-
----
-
-## 🧩 **Stack technique**
-
-| Outil / Librairie | Utilisation |
-|--------------------|-------------|
-| **Python** | Langage principal pour la transformation et la visualisation des données |
-| **Streamlit** | Création du dashboard interactif |
-| **Pandas** | Nettoyage, agrégation et filtrage des données |
-| **Plotly Express** | Visualisations dynamiques et esthétiques |
-| **NumPy** | Calculs statistiques et agrégations |
-| **Excel / CSV** | Source initiale de données |
-
----
-
-## 🧰 **Installation et exécution**
-
-### 1️⃣ Cloner le dépôt :
-```bash
-git clone https://github.com/maevaportfolio/Streamlit.git
-
-```
-
-### 2️⃣ Créer un environnement virtuel :
-```bash
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-```
-
-### 3️⃣ Installer les dépendances :
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Lancer le dashboard :
-```bash
-streamlit run app.py
-```
-
-L’application sera accessible sur :  
-👉 **http://localhost:8501**
 
 ---
 
