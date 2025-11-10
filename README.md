@@ -53,7 +53,8 @@ Télécharger Docker si besoin → https://www.docker.com/products/docker-deskto
 
 ### Étape 4 — Lancer l'application
 
-Une fois 
+Une fois le dépôt cloné, la bonne branche sélectionnée et Docker ouvert,
+tu peux lancer l’application avec la commande suivante :
 
 ```bash
 ./deploy.sh
@@ -64,8 +65,13 @@ Le script deploy.sh va automatiquement :
 - Lancer le conteneur
 - Ouvrir l’application
   
----
 
+Pour arrêter l'application, il suffit de faire :
+
+```bash
+./stop.sh
+```
+---
 
 ## 📎 Structure du projet
 
