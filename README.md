@@ -4,7 +4,9 @@
 
 Cette application Streamlit est déployée via Docker afin d'assurer un fonctionnement identique sur tous les ordinateurs (Windows, Mac, Linux).
 
-### ⚙️ Étape 1 — Cloner le dépôt :
+-- 
+
+### Étape 1 — Cloner le dépôt :
 
 Ouvre ton terminal (ou VS Code) et exécute :
 
@@ -50,6 +52,7 @@ Télécharger Docker si besoin → https://www.docker.com/products/docker-deskto
 
 - Lancer Docker Desktop et l'ouvrir avant de continuer
 
+-- 
 
 ### Étape 4 — Lancer l'application
 
