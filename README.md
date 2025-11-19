@@ -44,7 +44,7 @@ Télécharger Docker si besoin → https://www.docker.com/products/docker-deskto
 
 - Lancer Docker Desktop et l'ouvrir avant de continuer
 
--- 
+---
 
 ### Étape 4 — Lancer l'application
 
