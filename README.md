@@ -10,7 +10,7 @@ Une fois l’application démarrée, nous présenterons ensuite le Dashboard Adi
 
 --- 
 
-## 🚀 **Lancer l'application avex Docker**
+## 🚀 **Lancer l'application avec Docker**
 
 ### Étape 1 — Cloner le dépôt :
 
