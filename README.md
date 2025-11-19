@@ -32,23 +32,9 @@ Nous avons deux branches :
 
 | Branche              | Rôle                                              |
 |----------------------|--------------------------------------------------|
-| `main`               | Version stable / application locale              |
+| `main`               | Projet final                                    |
 | `deployment_branch`  | Travail collaboratif + déploiement Docker (✅ nous travaillons ici) |
 
-
-La branche principale de travail est **deployment_branch**.
-Vérifie que tu es dessus :
-
-```bash
-git checkout deployment_branch
-```
-
-Si la branche n’existe pas encore localement :
-
-```bash
-git fetch origin
-git checkout -b deployment_branch origin/deployment_branch
-```
 
 ---
 
