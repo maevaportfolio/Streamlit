@@ -94,8 +94,11 @@ Pour arrêter l'application, il suffit de faire :
 | `build.sh`             | 🔧 Script Bash    | Construit l’image Docker |
 | `run.sh`               | ⚙️ Script Bash    | Lance le conteneur Docker |
 | `stop.sh`              | 🛑 Script Bash    | Arrête le conteneur |
+| `test.sh`              | 🧪 Script Bash    | Tests liés au conteneur |
 | `requierements.txt`    | 📜 Fichier        | Liste des dépendances Python |
 | `README.md`            | 📜 Documentation  | Instructions de lancement |
+| `GUIDE-DEPLOIEMENT.md` | 📜 Documentation  | Guide détaillé du déploiement |
+| `GUIDE-TEST.md`        | 📜 Documentation  | Guide des scénarios de test |
 
 
 
