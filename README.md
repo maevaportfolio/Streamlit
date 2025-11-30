@@ -28,7 +28,7 @@ cd ton_repo
 
 ### Étape 2 — Passer sur la bonne branche
 
-Nous avons deux branches :
+Nous avons deux branches, par defaut, restez sur la main/master :
 
 | Branche              | Rôle                                              |
 |----------------------|--------------------------------------------------|
