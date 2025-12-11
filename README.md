@@ -28,27 +28,13 @@ cd ton_repo
 
 ### Étape 2 — Passer sur la bonne branche
 
-Nous avons deux branches :
+Nous avons deux branches, par defaut, restez sur la main/master :
 
 | Branche              | Rôle                                              |
 |----------------------|--------------------------------------------------|
-| `main`               | Version stable / application locale              |
+| `main`               | Projet final                                    |
 | `deployment_branch`  | Travail collaboratif + déploiement Docker (✅ nous travaillons ici) |
 
-
-La branche principale de travail est **deployment_branch**.
-Vérifie que tu es dessus :
-
-```bash
-git checkout deployment_branch
-```
-
-Si la branche n’existe pas encore localement :
-
-```bash
-git fetch origin
-git checkout -b deployment_branch origin/deployment_branch
-```
 
 ---
 
@@ -58,7 +44,7 @@ Télécharger Docker si besoin → https://www.docker.com/products/docker-deskto
 
 - Lancer Docker Desktop et l'ouvrir avant de continuer
 
--- 
+---
 
 ### Étape 4 — Lancer l'application
 
@@ -94,8 +80,11 @@ Pour arrêter l'application, il suffit de faire :
 | `build.sh`             | 🔧 Script Bash    | Construit l’image Docker |
 | `run.sh`               | ⚙️ Script Bash    | Lance le conteneur Docker |
 | `stop.sh`              | 🛑 Script Bash    | Arrête le conteneur |
+| `test.sh`              | 🧪 Script Bash    | Tests liés au conteneur |
 | `requierements.txt`    | 📜 Fichier        | Liste des dépendances Python |
 | `README.md`            | 📜 Documentation  | Instructions de lancement |
+| `GUIDE-DEPLOIEMENT.md` | 📜 Documentation  | Guide détaillé du déploiement |
+| `GUIDE-TEST.md`        | 📜 Documentation  | Guide des scénarios de test |
 
 
 

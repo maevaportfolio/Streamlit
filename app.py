@@ -10,6 +10,8 @@ import base64
 import plotly.graph_objects as go
 from PIL import Image
 import time
+import gdown
+import os
 
 # -------------------------
 # Animation initiale
@@ -105,6 +107,48 @@ for row in range(num_rows):
         """
 
 st.markdown(logos_html, unsafe_allow_html=True)
+# -------------------------
+# Téléchargement du dataset depuis Google Drive
+# -------------------------
+
+def download_dataset_from_drive(drive_url, output_path="dataset/adidas.csv"):
+    """
+    Télécharge le dataset depuis Google Drive si le fichier n'existe pas localement.
+    
+    Args:
+        drive_url: URL de partage Google Drive (format: https://drive.google.com/file/d/FILE_ID/view?usp=sharing)
+        output_path: Chemin de destination du fichier
+    """
+    output_file = Path(output_path)
+    
+    # Créer le dossier dataset s'il n'existe pas
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    
+    # Télécharger uniquement si le fichier n'existe pas
+    if not output_file.exists():
+        try:
+            st.info("📥 Téléchargement du dataset depuis Google Drive...")
+            # Extraire l'ID du fichier depuis l'URL Google Drive
+            if "/file/d/" in drive_url:
+                file_id = drive_url.split("/file/d/")[1].split("/")[0]
+                download_url = f"https://drive.google.com/uc?id={file_id}"
+            else:
+                download_url = drive_url
+            
+            # Télécharger le fichier avec vérification SSL désactivée
+            import ssl
+            ssl._create_default_https_context = ssl._create_unverified_context
+            gdown.download(download_url, str(output_file), quiet=False, verify=False)
+            st.success("✅ Dataset téléchargé avec succès!")
+        except Exception as e:
+            st.error(f"❌ Erreur lors du téléchargement : {str(e)}")
+            st.stop()
+
+# URL de votre fichier Google Drive
+DRIVE_URL = "https://drive.google.com/file/d/1Wekqqw5_g_pqWe4HGHzxYYkZdfLXzpFP/view?usp=drive_link"
+# Téléchargement automatique du dataset
+download_dataset_from_drive(DRIVE_URL)
+
 # -------------------------
 # Preprocessing
 # -------------------------
